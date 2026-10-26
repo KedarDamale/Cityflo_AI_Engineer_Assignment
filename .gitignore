@@ -17,3 +17,5 @@ local-transcripts/
 
 # Retain the raw ops log locally; publish safe references/fixtures.
 data/ops_log.txt
+data/obs.sqlite*
+data/celery/
