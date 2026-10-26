@@ -1,0 +1,42 @@
+{
+  "position_id": "ai-engineer",
+  "source": "https://careers.cityflo.com/takehomes/ai-engineer/",
+  "files": [
+    {
+      "path": "BRIEF.md",
+      "url": "https://careers.cityflo.com/takehomes/ai-engineer/BRIEF.md",
+      "bytes": 4475,
+      "sha256": "a43afb6cc7ab4b2e027524e1f295b31f58665c66d685955af280cdf10f7a8f26"
+    },
+    {
+      "path": "DATA_GUIDE.md",
+      "url": "https://careers.cityflo.com/takehomes/ai-engineer/DATA_GUIDE.md",
+      "bytes": 1787,
+      "sha256": "f76534e69dffe08c306bc6295d92fdfc831d838326b9480a5a973b465b699464"
+    },
+    {
+      "path": "HANDOFF.md",
+      "url": "https://careers.cityflo.com/takehomes/ai-engineer/HANDOFF.md",
+      "bytes": 1733,
+      "sha256": "bdde72322b83864f37df3edb885fb18225b008d613a170be7170f9b1553f64cb"
+    },
+    {
+      "path": "data/ops_log.txt",
+      "url": "https://careers.cityflo.com/takehomes/ai-engineer/data/ops_log.txt",
+      "bytes": 311,
+      "sha256": "94171353346d2fd327053725133ca09c49e22a16892afa0bfb935c789be273d4"
+    },
+    {
+      "path": "data/schedule_v2.csv",
+      "url": "https://careers.cityflo.com/takehomes/ai-engineer/data/schedule_v2.csv",
+      "bytes": 124,
+      "sha256": "b31e4e430ae1fcbaa2b7ea83259d4ca394019babdb07edc8ff707686da1dcc3a"
+    },
+    {
+      "path": "data/trips.csv",
+      "url": "https://careers.cityflo.com/takehomes/ai-engineer/data/trips.csv",
+      "bytes": 333516,
+      "sha256": "1c4d5bfe7ff229dfd52da8bb288b4b80fff71e00ab5369d339cdb7585cabb201"
+    }
+  ]
+}
