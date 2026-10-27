@@ -33,6 +33,8 @@ class ObservabilityIntegrationTest(unittest.TestCase):
                     server.stdin.flush()
                     self.assertTrue(select.select([server.stdout], [], [], 15)[0])
                     result = json.loads(server.stdout.readline())
+                    while "id" not in result:
+                        result = json.loads(server.stdout.readline())
                     self.assertIn("result", result)
                     return result["result"]
 
@@ -41,7 +43,7 @@ class ObservabilityIntegrationTest(unittest.TestCase):
                     "clientInfo": {"name": "persistence-test", "version": "1"}}})
                 server.stdin.write(json.dumps({"jsonrpc": "2.0", "method": "notifications/initialized"}) + "\n")
                 result = call({"jsonrpc": "2.0", "id": 2, "method": "tools/call", "params": {
-                    "name": "get_10th_marks", "arguments": {"name": "pravin"}}})
+                    "name": "get_user_skills", "arguments": {}}})
                 self.assertFalse(result.get("isError", False))
                 server.terminate()
                 self.assertEqual(server.wait(timeout=10), 0)
@@ -84,7 +86,7 @@ class ObservabilityIntegrationTest(unittest.TestCase):
                         worker.wait(timeout=5)
 
             self.assertEqual(counts, {"duckdb.connect": 1, "duckdb.close": 1, "server.started": 1,
-                                      "server.stopping": 1, "server.stopped": 1, "mcp.get_10th_marks": 1})
+                                      "server.stopping": 1, "server.stopped": 1, "mcp.get_user_skills": 1})
             (ROOT / "outputs/observability-validation.json").write_text(json.dumps({
                 "verified": True, "real_celery_worker": True, "server_exited_before_worker_started": True,
                 "server_exit_code": 0, "worker_exit_code": 0, "persisted_events": counts,

@@ -4,5 +4,6 @@ from .duckdb_factory import DuckDBFactory, QueryResult
 from .celery_factory import CeleryFactory
 from .logging_factory import LoggingFactory
 from .observability_factory import ObservabilityFactory
+from .personal_info_factory import PersonalInfoFactory
 
-__all__ = ["CeleryFactory", "DuckDBFactory", "LoggingFactory", "ObservabilityFactory", "QueryResult"]
+__all__ = ["CeleryFactory", "DuckDBFactory", "LoggingFactory", "ObservabilityFactory", "PersonalInfoFactory", "QueryResult"]

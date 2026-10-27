@@ -5,6 +5,7 @@ import os
 import sys
 
 from mcp.server.stdio import stdio_server
+from fastmcp.server.context import reset_transport, set_transport
 
 
 async def run_stdio(server):
@@ -13,6 +14,7 @@ async def run_stdio(server):
     reader = asyncio.StreamReader(limit=16 * 1024 * 1024)
     pipe = os.fdopen(os.dup(sys.stdin.fileno()), "rb", buffering=0)
     transport = None
+    context_token = set_transport("stdio")
     try:
         transport, _ = await asyncio.get_running_loop().connect_read_pipe(
             lambda: asyncio.StreamReaderProtocol(reader), pipe
@@ -25,6 +27,7 @@ async def run_stdio(server):
                     incoming, outgoing, server._mcp_server.create_initialization_options()
                 )
     finally:
+        reset_transport(context_token)
         if transport is not None:
             transport.close()
         else:

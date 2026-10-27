@@ -2,9 +2,11 @@
 
 import json
 import logging
+import re
 from datetime import datetime, timezone
 
 from ...core.events import EVENTS
+from ...core.config import MCP_PATH
 
 
 class SafeJSONFormatter(logging.Formatter):
@@ -23,5 +25,22 @@ class SafeJSONFormatter(logging.Formatter):
         status = getattr(record, "status", None)
         if status in ("ok", "error"):
             payload["status"] = status
+        if event == "server.connection":
+            transport = getattr(record, "transport", None)
+            if transport in ("http", "stdio"):
+                payload.update(transport=transport, authentication="none")
+            host = getattr(record, "connection_host", None)
+            port = getattr(record, "connection_port", None)
+            # Only accept host/port, never arbitrary URLs, headers, or credentials.
+            if (transport == "http" and isinstance(host, str)
+                    and re.fullmatch(r"[A-Za-z0-9.:-]+", host)
+                    and type(port) is int and 0 < port < 65536):
+                host = {"0.0.0.0": "127.0.0.1", "::": "::1"}.get(host, host)
+                authority = f"[{host}]" if ":" in host else host
+                url = f"http://{authority}:{port}{MCP_PATH}"
+                payload["url"] = url
+                payload["client_config"] = {
+                    "mcpServers": {"kedar_cityflow_mcp": {"url": url}}
+                }
         # Do not format exc_info: database errors can contain SQL and data values.
         return json.dumps(payload, allow_nan=False)

@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
+MCP_PATH = "/kedar_cityflow_mcp"
 
 
 def get_data_dir() -> Path:

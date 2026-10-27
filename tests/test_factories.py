@@ -39,9 +39,19 @@ class FactoriesTest(unittest.TestCase):
         except RuntimeError:
             logger.error(private, extra={"sql": private, "parameters": private}, exc_info=True)
         logger.info("duckdb.query", extra={"status": "ok", "duration_ms": 1.5})
+        logger.info("server.connection", extra={
+            "transport": "http", "connection_host": "0.0.0.0", "connection_port": 8001,
+            "authorization": private, "password": private,
+        })
+        logger.info("server.connection", extra={
+            "transport": "http", "connection_host": "user:password@host", "connection_port": 8001,
+        })
         records = [json.loads(line) for line in stream.getvalue().splitlines()]
         self.assertEqual(records[0]["event"], "application.log")
         self.assertEqual(records[1]["duration_ms"], 1.5)
+        self.assertEqual(records[2]["url"], "http://127.0.0.1:8001/kedar_cityflow_mcp")
+        self.assertNotIn("url", records[3])
+        self.assertNotIn("password", stream.getvalue())
         self.assertNotIn(private, stream.getvalue())
 
     def test_sqlite_writes_are_idempotent_and_reject_extra_data(self):
