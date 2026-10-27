@@ -9,9 +9,22 @@ import uvicorn
 from fastmcp import FastMCP
 
 from ..factories.logging_factory import LoggingFactory
+from ..core.config import MCP_PATH
 from ..infrastructure.transports.stdio import run_stdio
 
 logger = LoggingFactory.create("cityflo.server")
+
+
+class ConnectionLoggingServer(uvicorn.Server):
+    async def startup(self, sockets=None) -> None:
+        await super().startup(sockets=sockets)
+        if self.started:
+            # Log only after the listener is bound; port 0 reports its real port.
+            port = self.servers[0].sockets[0].getsockname()[1]
+            logger.info("server.connection", extra={
+                "transport": "http", "connection_host": self.config.host,
+                "connection_port": port,
+            })
 
 
 @contextmanager
@@ -29,9 +42,9 @@ def shutdown_signals(request_stop):
 
 async def serve(mcp: FastMCP, args: argparse.Namespace) -> None:
     if args.transport == "http":
-        server = uvicorn.Server(
+        server = ConnectionLoggingServer(
             uvicorn.Config(
-                mcp.http_app(path="/cityflo_mcp"),
+                mcp.http_app(path=MCP_PATH),
                 host=args.host,
                 port=args.port,
                 lifespan="on",
@@ -44,6 +57,8 @@ async def serve(mcp: FastMCP, args: argparse.Namespace) -> None:
         with shutdown_signals(lambda: setattr(server, "should_exit", True)):
             await server.serve()
     else:
+        logger.info("server.connection", extra={"transport": "stdio"})
+        loop = asyncio.get_running_loop()
         task = asyncio.create_task(run_stdio(mcp))
         stopping = False
 
@@ -52,7 +67,9 @@ async def serve(mcp: FastMCP, args: argparse.Namespace) -> None:
             if not stopping:
                 stopping = True
                 logger.info("server.shutdown.requested")
-                task.cancel()
+                # signal.signal can run while the loop is blocked in select.
+                # Wake its self-pipe as well as scheduling cancellation.
+                loop.call_soon_threadsafe(task.cancel)
 
         with shutdown_signals(request_stop):
             try:
