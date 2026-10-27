@@ -1,7 +1,7 @@
 [project]
 name = "cityflo-ai-engineer-assignment"
 version = "0.1.0"
-description = "MCP server for discoverable student Class 10 marks lookups"
+description = "MCP server for personal resume tools, resources, and prompts"
 readme = "README.md"
 authors = [
     { name = "KedarDamale", email = "damalekedar@gmail.com" }
@@ -13,7 +13,6 @@ dependencies = [
     "fastmcp>=4.1.4",
     "mcp>=2.3.0",
     "pydantic>=2",
-    "rapidfuzz>=3.14.6",
     "uvicorn>=0.54.0",
 ]
 
