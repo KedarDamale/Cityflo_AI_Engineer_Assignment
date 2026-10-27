@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 
 from fastmcp import FastMCP
 
-from ..factories import DuckDBFactory, LoggingFactory, ObservabilityFactory
+from ..factories import DuckDBFactory, LoggingFactory, ObservabilityFactory, PersonalInfoFactory
 
 logger = LoggingFactory.create("cityflo.server")
 
@@ -16,9 +16,10 @@ async def server_lifespan(server: FastMCP):
     observer = await asyncio.to_thread(ObservabilityFactory.create, logger=logger)
     database = DuckDBFactory.create(observer=observer)
     try:
+        personal_info = await asyncio.to_thread(PersonalInfoFactory.create)
         await asyncio.to_thread(database.connect)
         observer.record("server.started")
-        yield {"database": database, "observability": observer}
+        yield {"database": database, "observability": observer, "personal_info": personal_info}
     finally:
         observer.record("server.stopping")
         try:
