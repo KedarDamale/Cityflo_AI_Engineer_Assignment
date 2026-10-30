@@ -6,6 +6,7 @@ from .lifecycle import server_lifespan
 from ..tools.personal_info import register_tools
 from ..resources.personal_info import register_resources
 from ..prompts.personal_info import register_prompts
+from ..route_analysis import make_server as make_route_server
 
 
 def create_server() -> FastMCP:
@@ -22,10 +23,11 @@ def create_server() -> FastMCP:
             "introduce_candidate prompt provides resume-grounded writing context. "
             "inspect_session reports only current MCP request metadata, not chat history. "
             "Claims are supplied by the owner; do not invent missing project URLs. "
-            "This server does not implement route or trip analysis."
+            "Route delay tools provide exploratory timetable-based analysis."
         ),
     )
     register_resources(server)
     register_tools(server)
     register_prompts(server)
+    server.mount(make_route_server())
     return server
