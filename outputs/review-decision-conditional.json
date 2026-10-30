@@ -1,0 +1,1260 @@
+{
+  "status": "conditional: 4xx membership unknown",
+  "review_score_rule": "10% trimmed mean plus 30 minutes times share of included trips with delay >30 minutes; flag if unrounded score >5 minutes; rank by displayed score then route code",
+  "baseline": [
+    {
+      "review_score_min": 8.28,
+      "severe_over_30_count": 19,
+      "review_verdict": "flag",
+      "route": "R-35",
+      "trips": 132,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 3.96,
+      "huber_min": 1.99,
+      "mean_min": 8.05,
+      "late_over_10_count": 21,
+      "p90_min": 50.0
+    },
+    {
+      "review_score_min": 7.9,
+      "severe_over_30_count": 0,
+      "review_verdict": "flag",
+      "route": "R-14",
+      "trips": 118,
+      "median_min": 8.0,
+      "trimmed_mean_10_min": 7.9,
+      "huber_min": 7.97,
+      "mean_min": 8.07,
+      "late_over_10_count": 28,
+      "p90_min": 14.0
+    },
+    {
+      "review_score_min": 5.42,
+      "severe_over_30_count": 0,
+      "review_verdict": "flag",
+      "route": "R-33",
+      "trips": 104,
+      "median_min": 5.0,
+      "trimmed_mean_10_min": 5.42,
+      "huber_min": 5.36,
+      "mean_min": 5.36,
+      "late_over_10_count": 8,
+      "p90_min": 10.0
+    },
+    {
+      "review_score_min": 4.52,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-26",
+      "trips": 103,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 4.52,
+      "huber_min": 4.54,
+      "mean_min": 4.51,
+      "late_over_10_count": 4,
+      "p90_min": 9.0
+    },
+    {
+      "review_score_min": 4.27,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-37",
+      "trips": 105,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 4.27,
+      "huber_min": 4.31,
+      "mean_min": 4.13,
+      "late_over_10_count": 5,
+      "p90_min": 9.0
+    },
+    {
+      "review_score_min": 3.73,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-31",
+      "trips": 112,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 3.73,
+      "huber_min": 3.74,
+      "mean_min": 3.59,
+      "late_over_10_count": 0,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.87,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-17",
+      "trips": 147,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.87,
+      "huber_min": 2.93,
+      "mean_min": 2.98,
+      "late_over_10_count": 7,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.67,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-07",
+      "trips": 147,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.67,
+      "huber_min": 2.67,
+      "mean_min": 2.73,
+      "late_over_10_count": 3,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.65,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-40",
+      "trips": 152,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.65,
+      "huber_min": 2.66,
+      "mean_min": 2.61,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.64,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-15",
+      "trips": 119,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.64,
+      "huber_min": 2.66,
+      "mean_min": 2.67,
+      "late_over_10_count": 4,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.58,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-08",
+      "trips": 126,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.58,
+      "huber_min": 2.73,
+      "mean_min": 2.36,
+      "late_over_10_count": 2,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.56,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-27",
+      "trips": 143,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.56,
+      "huber_min": 2.58,
+      "mean_min": 2.6,
+      "late_over_10_count": 5,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.55,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-34",
+      "trips": 124,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.55,
+      "huber_min": 2.56,
+      "mean_min": 2.51,
+      "late_over_10_count": 1,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.4,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-05",
+      "trips": 105,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.4,
+      "huber_min": 2.38,
+      "mean_min": 2.34,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.38,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-19",
+      "trips": 125,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.38,
+      "huber_min": 2.35,
+      "mean_min": 2.33,
+      "late_over_10_count": 2,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.29,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-09",
+      "trips": 146,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.29,
+      "huber_min": 2.34,
+      "mean_min": 2.31,
+      "late_over_10_count": 4,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.05,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-11",
+      "trips": 137,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.05,
+      "huber_min": 2.04,
+      "mean_min": 2.26,
+      "late_over_10_count": 4,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.04,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-21",
+      "trips": 124,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.04,
+      "huber_min": 1.96,
+      "mean_min": 1.82,
+      "late_over_10_count": 0,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.0,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-18",
+      "trips": 154,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.0,
+      "huber_min": 2.0,
+      "mean_min": 2.03,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.97,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-20",
+      "trips": 145,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.97,
+      "huber_min": 1.98,
+      "mean_min": 1.97,
+      "late_over_10_count": 5,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.92,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-22",
+      "trips": 112,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.92,
+      "huber_min": 1.96,
+      "mean_min": 1.82,
+      "late_over_10_count": 3,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.83,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-39",
+      "trips": 154,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.83,
+      "huber_min": 1.83,
+      "mean_min": 1.81,
+      "late_over_10_count": 3,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.67,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-03",
+      "trips": 103,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.67,
+      "huber_min": 1.67,
+      "mean_min": 1.7,
+      "late_over_10_count": 0,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.62,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-12",
+      "trips": 112,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.62,
+      "huber_min": 1.65,
+      "mean_min": 1.79,
+      "late_over_10_count": 2,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.44,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-38",
+      "trips": 146,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.44,
+      "huber_min": 1.46,
+      "mean_min": 1.49,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.42,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-02",
+      "trips": 105,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.42,
+      "huber_min": 1.36,
+      "mean_min": 1.34,
+      "late_over_10_count": 0,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.38,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-25",
+      "trips": 139,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.38,
+      "huber_min": 1.37,
+      "mean_min": 1.45,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.17,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-32",
+      "trips": 133,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.17,
+      "huber_min": 1.18,
+      "mean_min": 1.17,
+      "late_over_10_count": 1,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.07,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-10",
+      "trips": 126,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.07,
+      "huber_min": 1.1,
+      "mean_min": 1.07,
+      "late_over_10_count": 2,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 0.76,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-01",
+      "trips": 153,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.76,
+      "huber_min": 0.77,
+      "mean_min": 0.82,
+      "late_over_10_count": 3,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.75,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-24",
+      "trips": 146,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.75,
+      "huber_min": 0.74,
+      "mean_min": 0.84,
+      "late_over_10_count": 3,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 0.66,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-28",
+      "trips": 151,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.66,
+      "huber_min": 0.62,
+      "mean_min": 0.62,
+      "late_over_10_count": 1,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.39,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-36",
+      "trips": 132,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.39,
+      "huber_min": 0.36,
+      "mean_min": 0.22,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.17,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-23",
+      "trips": 132,
+      "median_min": 0.0,
+      "trimmed_mean_10_min": 0.17,
+      "huber_min": 0.13,
+      "mean_min": 0.11,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.11,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-04",
+      "trips": 144,
+      "median_min": 0.0,
+      "trimmed_mean_10_min": 0.11,
+      "huber_min": 0.18,
+      "mean_min": 0.17,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": -0.14,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-16",
+      "trips": 146,
+      "median_min": 0.0,
+      "trimmed_mean_10_min": -0.14,
+      "huber_min": -0.14,
+      "mean_min": -0.19,
+      "late_over_10_count": 0,
+      "p90_min": 4.0
+    },
+    {
+      "review_score_min": -0.46,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-30",
+      "trips": 147,
+      "median_min": -1.0,
+      "trimmed_mean_10_min": -0.46,
+      "huber_min": -0.44,
+      "mean_min": -0.38,
+      "late_over_10_count": 1,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": -0.91,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-13",
+      "trips": 133,
+      "median_min": -1.0,
+      "trimmed_mean_10_min": -0.91,
+      "huber_min": -0.92,
+      "mean_min": -0.93,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": -0.94,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-29",
+      "trips": 151,
+      "median_min": -1.0,
+      "trimmed_mean_10_min": -0.94,
+      "huber_min": -0.95,
+      "mean_min": -0.93,
+      "late_over_10_count": 0,
+      "p90_min": 4.0
+    },
+    {
+      "review_score_min": -1.54,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-06",
+      "trips": 117,
+      "median_min": -2.0,
+      "trimmed_mean_10_min": -1.54,
+      "huber_min": -1.54,
+      "mean_min": -1.45,
+      "late_over_10_count": 0,
+      "p90_min": 4.0
+    }
+  ],
+  "scenario_all_scheduled_routes_4xx": [
+    {
+      "review_score_min": 8.28,
+      "severe_over_30_count": 19,
+      "review_verdict": "flag",
+      "route": "R-35",
+      "trips": 132,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 3.96,
+      "huber_min": 1.99,
+      "mean_min": 8.05,
+      "late_over_10_count": 21,
+      "p90_min": 50.0
+    },
+    {
+      "review_score_min": 5.42,
+      "severe_over_30_count": 0,
+      "review_verdict": "flag",
+      "route": "R-33",
+      "trips": 104,
+      "median_min": 5.0,
+      "trimmed_mean_10_min": 5.42,
+      "huber_min": 5.36,
+      "mean_min": 5.36,
+      "late_over_10_count": 8,
+      "p90_min": 10.0
+    },
+    {
+      "review_score_min": 4.52,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-26",
+      "trips": 103,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 4.52,
+      "huber_min": 4.54,
+      "mean_min": 4.51,
+      "late_over_10_count": 4,
+      "p90_min": 9.0
+    },
+    {
+      "review_score_min": 4.29,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-27",
+      "trips": 143,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 4.29,
+      "huber_min": 4.23,
+      "mean_min": 4.14,
+      "late_over_10_count": 31,
+      "p90_min": 14.0
+    },
+    {
+      "review_score_min": 4.27,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-37",
+      "trips": 105,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 4.27,
+      "huber_min": 4.31,
+      "mean_min": 4.13,
+      "late_over_10_count": 5,
+      "p90_min": 9.0
+    },
+    {
+      "review_score_min": 3.73,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-31",
+      "trips": 112,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 3.73,
+      "huber_min": 3.74,
+      "mean_min": 3.59,
+      "late_over_10_count": 0,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.89,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-14",
+      "trips": 118,
+      "median_min": 4.0,
+      "trimmed_mean_10_min": 2.89,
+      "huber_min": 2.77,
+      "mean_min": 2.47,
+      "late_over_10_count": 18,
+      "p90_min": 12.0
+    },
+    {
+      "review_score_min": 2.87,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-17",
+      "trips": 147,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.87,
+      "huber_min": 2.93,
+      "mean_min": 2.98,
+      "late_over_10_count": 7,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.67,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-07",
+      "trips": 147,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.67,
+      "huber_min": 2.67,
+      "mean_min": 2.73,
+      "late_over_10_count": 3,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.65,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-40",
+      "trips": 152,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.65,
+      "huber_min": 2.66,
+      "mean_min": 2.61,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.64,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-15",
+      "trips": 119,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.64,
+      "huber_min": 2.66,
+      "mean_min": 2.67,
+      "late_over_10_count": 4,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.58,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-08",
+      "trips": 126,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.58,
+      "huber_min": 2.73,
+      "mean_min": 2.36,
+      "late_over_10_count": 2,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.55,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-34",
+      "trips": 124,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.55,
+      "huber_min": 2.56,
+      "mean_min": 2.51,
+      "late_over_10_count": 1,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.4,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-05",
+      "trips": 105,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.4,
+      "huber_min": 2.38,
+      "mean_min": 2.34,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.38,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-19",
+      "trips": 125,
+      "median_min": 3.0,
+      "trimmed_mean_10_min": 2.38,
+      "huber_min": 2.35,
+      "mean_min": 2.33,
+      "late_over_10_count": 2,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.29,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-09",
+      "trips": 146,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.29,
+      "huber_min": 2.34,
+      "mean_min": 2.31,
+      "late_over_10_count": 4,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.05,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-11",
+      "trips": 137,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.05,
+      "huber_min": 2.04,
+      "mean_min": 2.26,
+      "late_over_10_count": 4,
+      "p90_min": 8.0
+    },
+    {
+      "review_score_min": 2.04,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-21",
+      "trips": 124,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.04,
+      "huber_min": 1.96,
+      "mean_min": 1.82,
+      "late_over_10_count": 0,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 2.0,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-18",
+      "trips": 154,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 2.0,
+      "huber_min": 2.0,
+      "mean_min": 2.03,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.97,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-20",
+      "trips": 145,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.97,
+      "huber_min": 1.98,
+      "mean_min": 1.97,
+      "late_over_10_count": 5,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.92,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-22",
+      "trips": 112,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.92,
+      "huber_min": 1.96,
+      "mean_min": 1.82,
+      "late_over_10_count": 3,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.83,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-39",
+      "trips": 154,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.83,
+      "huber_min": 1.83,
+      "mean_min": 1.81,
+      "late_over_10_count": 3,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.67,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-03",
+      "trips": 103,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.67,
+      "huber_min": 1.67,
+      "mean_min": 1.7,
+      "late_over_10_count": 0,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.62,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-12",
+      "trips": 112,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.62,
+      "huber_min": 1.65,
+      "mean_min": 1.79,
+      "late_over_10_count": 2,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.44,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-38",
+      "trips": 146,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.44,
+      "huber_min": 1.46,
+      "mean_min": 1.49,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.42,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-02",
+      "trips": 105,
+      "median_min": 2.0,
+      "trimmed_mean_10_min": 1.42,
+      "huber_min": 1.36,
+      "mean_min": 1.34,
+      "late_over_10_count": 0,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 1.38,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-25",
+      "trips": 139,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.38,
+      "huber_min": 1.37,
+      "mean_min": 1.45,
+      "late_over_10_count": 3,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.17,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-32",
+      "trips": 133,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.17,
+      "huber_min": 1.18,
+      "mean_min": 1.17,
+      "late_over_10_count": 1,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 1.07,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-10",
+      "trips": 126,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 1.07,
+      "huber_min": 1.1,
+      "mean_min": 1.07,
+      "late_over_10_count": 2,
+      "p90_min": 7.0
+    },
+    {
+      "review_score_min": 0.76,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-01",
+      "trips": 153,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.76,
+      "huber_min": 0.77,
+      "mean_min": 0.82,
+      "late_over_10_count": 3,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.75,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-24",
+      "trips": 146,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.75,
+      "huber_min": 0.74,
+      "mean_min": 0.84,
+      "late_over_10_count": 3,
+      "p90_min": 6.0
+    },
+    {
+      "review_score_min": 0.66,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-28",
+      "trips": 151,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.66,
+      "huber_min": 0.62,
+      "mean_min": 0.62,
+      "late_over_10_count": 1,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.39,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-36",
+      "trips": 132,
+      "median_min": 1.0,
+      "trimmed_mean_10_min": 0.39,
+      "huber_min": 0.36,
+      "mean_min": 0.22,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.17,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-23",
+      "trips": 132,
+      "median_min": 0.0,
+      "trimmed_mean_10_min": 0.17,
+      "huber_min": 0.13,
+      "mean_min": 0.11,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": 0.11,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-04",
+      "trips": 144,
+      "median_min": 0.0,
+      "trimmed_mean_10_min": 0.11,
+      "huber_min": 0.18,
+      "mean_min": 0.17,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": -0.14,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-16",
+      "trips": 146,
+      "median_min": 0.0,
+      "trimmed_mean_10_min": -0.14,
+      "huber_min": -0.14,
+      "mean_min": -0.19,
+      "late_over_10_count": 0,
+      "p90_min": 4.0
+    },
+    {
+      "review_score_min": -0.46,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-30",
+      "trips": 147,
+      "median_min": -1.0,
+      "trimmed_mean_10_min": -0.46,
+      "huber_min": -0.44,
+      "mean_min": -0.38,
+      "late_over_10_count": 1,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": -0.91,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-13",
+      "trips": 133,
+      "median_min": -1.0,
+      "trimmed_mean_10_min": -0.91,
+      "huber_min": -0.92,
+      "mean_min": -0.93,
+      "late_over_10_count": 0,
+      "p90_min": 5.0
+    },
+    {
+      "review_score_min": -0.94,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-29",
+      "trips": 151,
+      "median_min": -1.0,
+      "trimmed_mean_10_min": -0.94,
+      "huber_min": -0.95,
+      "mean_min": -0.93,
+      "late_over_10_count": 0,
+      "p90_min": 4.0
+    },
+    {
+      "review_score_min": -1.54,
+      "severe_over_30_count": 0,
+      "review_verdict": "clear",
+      "route": "R-06",
+      "trips": 117,
+      "median_min": -2.0,
+      "trimmed_mean_10_min": -1.54,
+      "huber_min": -1.54,
+      "mean_min": -1.45,
+      "late_over_10_count": 0,
+      "p90_min": 4.0
+    }
+  ],
+  "excluded": [
+    {
+      "trip_id": "T1-00136",
+      "route": "R-01",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-00352",
+      "route": "R-03",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-00361",
+      "route": "R-03",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-00392",
+      "route": "R-04",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-00417",
+      "route": "R-04",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-00470",
+      "route": "R-04",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-00673",
+      "route": "R-06",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-00734",
+      "route": "R-06",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-01111",
+      "route": "R-09",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-01303",
+      "route": "R-11",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-01372",
+      "route": "R-11",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-01419",
+      "route": "R-11",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-01691",
+      "route": "R-14",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-02034",
+      "route": "R-16",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-02470",
+      "route": "R-19",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-02488",
+      "route": "R-20",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-02585",
+      "route": "R-20",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-02697",
+      "route": "R-21",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-02730",
+      "route": "R-21",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-02930",
+      "route": "R-23",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03142",
+      "route": "R-24",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-03274",
+      "route": "R-25",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03297",
+      "route": "R-26",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03377",
+      "route": "R-26",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-03396",
+      "route": "R-27",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03414",
+      "route": "R-27",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03490",
+      "route": "R-27",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03491",
+      "route": "R-27",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-03636",
+      "route": "R-28",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-03641",
+      "route": "R-28",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03669",
+      "route": "R-28",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03716",
+      "route": "R-29",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03733",
+      "route": "R-29",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-03822",
+      "route": "R-29",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-04337",
+      "route": "R-33",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-04381",
+      "route": "R-34",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-04466",
+      "route": "R-34",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-04540",
+      "route": "R-35",
+      "reason": "implausible elapsed time"
+    },
+    {
+      "trip_id": "T1-04646",
+      "route": "R-36",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-04846",
+      "route": "R-38",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-05210",
+      "route": "R-40",
+      "reason": "invalid input"
+    },
+    {
+      "trip_id": "T1-05264",
+      "route": "R-40",
+      "reason": "implausible elapsed time"
+    }
+  ]
+}
