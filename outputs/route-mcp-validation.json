@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-11-04T12:08:56.918293+00:00",
+  "transport": "stdio subprocess",
+  "tools": [
+    "route_delays",
+    "worst_routes",
+    "evaluate_methods",
+    "route_evidence"
+  ],
+  "calls": [
+    "route_delays",
+    "worst_routes",
+    "evaluate_methods",
+    "route_evidence"
+  ],
+  "route_count": 40,
+  "excluded_count": 42,
+  "ranking": [
+    "R-35",
+    "R-14",
+    "R-33"
+  ],
+  "matches_generated_decision": true,
+  "default_ranking_matches_decision": true,
+  "limitation": "Export runtime chosen for unidentified classes; no verified 4xx mapping"
+}

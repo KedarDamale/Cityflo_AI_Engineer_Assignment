@@ -1,0 +1,456 @@
+{
+  "transport": "stdio subprocess",
+  "calls": [
+    {
+      "tool": "get_personal_info",
+      "result_keys": [
+        "personal_info"
+      ],
+      "matches_source": true
+    },
+    {
+      "tool": "get_user_skills",
+      "result_keys": [
+        "summary",
+        "skills"
+      ],
+      "matches_source": true
+    },
+    {
+      "tool": "get_work_experiance",
+      "result_keys": [
+        "work_experience"
+      ],
+      "matches_source": true
+    },
+    {
+      "tool": "get_personal_projects",
+      "result_keys": [
+        "projects"
+      ],
+      "matches_source": true
+    },
+    {
+      "tool": "get_personal_achievements",
+      "result_keys": [
+        "education_and_achievements"
+      ],
+      "matches_source": true
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_personal_info",
+      "title": "Get Personal Info",
+      "description": "Get Kedar Damale's name, location, phone, email, and profile links.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "personal_info": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "personal_info"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "get_user_skills",
+      "title": "Get User Skills",
+      "description": "Get Kedar Damale's resume summary and categorized technical skills.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "summary": {
+            "type": "string"
+          },
+          "skills": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "summary",
+          "skills"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "get_work_experiance",
+      "title": "Get Work Experiance",
+      "description": "Get Kedar Damale's work experience, employers, dates, and project outcomes.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "work_experience": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "work_experience"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "get_personal_projects",
+      "title": "Get Personal Projects",
+      "description": "Get Kedar Damale's Chessablanka, NeuroTRIBE, and CattleMO projects.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "projects": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "projects"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "get_personal_achievements",
+      "title": "Get Personal Achievements",
+      "description": "Get Kedar Damale's education, GATE DA qualification, and achievements.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "education_and_achievements": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "education_and_achievements"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "inspect_session",
+      "title": "Inspect Session",
+      "description": "Inspect this MCP request's identifiers, transport, and protocol version.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "session_id": {
+            "type": "string"
+          },
+          "request_id": {
+            "type": "string"
+          },
+          "transport": {
+            "type": "string"
+          },
+          "protocol_version": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "session_id",
+          "request_id",
+          "transport",
+          "protocol_version"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "route_delays",
+      "title": "Route Delays",
+      "description": "Return per-route arrival delay statistics and data-quality counts.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "worst_routes",
+      "title": "Worst Routes",
+      "description": "Rank by the operational review_score; median, trimmed_mean_10, huber, and mean are comparison methods.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "limit": {
+            "default": 3,
+            "type": "integer"
+          },
+          "method": {
+            "default": "review_score",
+            "type": "string"
+          }
+        }
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "evaluate_methods",
+      "title": "Evaluate Methods",
+      "description": "Compare rankings, trim parameters, and leave-one-day-out median rankings.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {}
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    },
+    {
+      "name": "route_evidence",
+      "title": "Route Evidence",
+      "description": "Return trip identifiers and calculated delays for a route, including excluded record reasons.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "route": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "route"
+        ]
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "personal-info://resume/personal-info",
+      "mime_type": "application/json"
+    },
+    {
+      "uri": "personal-info://resume/skills",
+      "mime_type": "application/json"
+    },
+    {
+      "uri": "personal-info://resume/work-experience",
+      "mime_type": "application/json"
+    },
+    {
+      "uri": "personal-info://resume/projects",
+      "mime_type": "application/json"
+    },
+    {
+      "uri": "personal-info://resume/achievements",
+      "mime_type": "application/json"
+    },
+    {
+      "uri": "personal-info://resume/data",
+      "mime_type": "application/json"
+    }
+  ],
+  "session_inspection": {
+    "keys": [
+      "session_id",
+      "request_id",
+      "transport",
+      "protocol_version"
+    ],
+    "verified": true
+  },
+  "prompt": {
+    "name": "introduce_candidate",
+    "default_and_custom_role": true
+  },
+  "verified": true,
+  "context_logs": [
+    "mcp.get_personal_info.started",
+    "mcp.get_personal_info.completed",
+    "mcp.get_user_skills.started",
+    "mcp.get_user_skills.completed",
+    "mcp.get_work_experiance.started",
+    "mcp.get_work_experiance.completed",
+    "mcp.get_personal_projects.started",
+    "mcp.get_personal_projects.completed",
+    "mcp.get_personal_achievements.started",
+    "mcp.get_personal_achievements.completed"
+  ],
+  "context_progress": [
+    {
+      "progress": 0.0,
+      "total": 1.0,
+      "message": "Reading resume resource"
+    },
+    {
+      "progress": 1.0,
+      "total": 1.0,
+      "message": "Resume resource ready"
+    },
+    {
+      "progress": 0.0,
+      "total": 1.0,
+      "message": "Reading resume resource"
+    },
+    {
+      "progress": 1.0,
+      "total": 1.0,
+      "message": "Resume resource ready"
+    },
+    {
+      "progress": 0.0,
+      "total": 1.0,
+      "message": "Reading resume resource"
+    },
+    {
+      "progress": 1.0,
+      "total": 1.0,
+      "message": "Resume resource ready"
+    },
+    {
+      "progress": 0.0,
+      "total": 1.0,
+      "message": "Reading resume resource"
+    },
+    {
+      "progress": 1.0,
+      "total": 1.0,
+      "message": "Resume resource ready"
+    },
+    {
+      "progress": 0.0,
+      "total": 1.0,
+      "message": "Reading resume resource"
+    },
+    {
+      "progress": 1.0,
+      "total": 1.0,
+      "message": "Resume resource ready"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "verified": true,
+  "cases": [
+    {
+      "transport": "stdio",
+      "stop": "SIGINT",
+      "entrypoint": "module",
+      "exit_code": 0,
+      "cleanup_completed_once": true
+    },
+    {
+      "transport": "stdio",
+      "stop": "SIGTERM",
+      "entrypoint": "direct file",
+      "exit_code": 0,
+      "cleanup_completed_once": true
+    },
+    {
+      "transport": "stdio",
+      "stop": "EOF",
+      "entrypoint": "module",
+      "exit_code": 0,
+      "cleanup_completed_once": true
+    },
+    {
+      "transport": "http",
+      "stop": "SIGINT",
+      "exit_code": 0,
+      "advertised_url_mcp_call_verified": true,
+      "in_flight_response_completed": true,
+      "listener_closed": true,
+      "cleanup_completed_once": true
+    },
+    {
+      "transport": "http",
+      "stop": "SIGTERM",
+      "exit_code": 0,
+      "advertised_url_mcp_call_verified": true,
+      "in_flight_response_completed": true,
+      "listener_closed": true,
+      "cleanup_completed_once": true
+    }
+  ]
+}

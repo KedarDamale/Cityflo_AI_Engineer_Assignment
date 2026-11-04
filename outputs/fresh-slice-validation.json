@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-11-04T12:06:29.000259+00:00",
+  "synthetic_slice": true,
+  "transport": "real MCP stdio subprocess",
+  "original_inputs_overwritten": false,
+  "input_rows": 7,
+  "included": 4,
+  "excluded": 3,
+  "verified": [
+    "effective-date boundary",
+    "explicit 4xx timetable",
+    "equivalent UTC arrival",
+    "unidentified class uses export",
+    "no-data routes not silently cleared",
+    "duplicate IDs excluded",
+    "fresh report excludes original narrative",
+    "all four real MCP tools",
+    "6-point constraint clears borderline R-52"
+  ],
+  "ranking": [
+    "R-51",
+    "R-52"
+  ],
+  "default_flags": [
+    "R-51",
+    "R-52"
+  ],
+  "six_point_constraint_flags": [
+    "R-51"
+  ]
+}

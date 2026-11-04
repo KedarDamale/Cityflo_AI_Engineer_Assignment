@@ -57,7 +57,10 @@ class PersonalInfoMCPTest(unittest.IsolatedAsyncioTestCase):
             async with Client(transport, init_timeout=20, timeout=15, log_handler=on_log) as client:
                 self.assertIn("Kedar Damale", client.instructions)
                 tools = await client.list_tools()
-                self.assertEqual({t.name for t in tools}, set(CASES) | {"inspect_session"})
+                self.assertEqual({t.name for t in tools}, set(CASES) | {
+                    "inspect_session", "route_delays", "worst_routes",
+                    "evaluate_methods", "route_evidence",
+                })
                 evidence["tools"] = [t.model_dump(mode="json", by_alias=True, exclude_none=True) for t in tools]
                 resources = await client.list_resources()
                 self.assertEqual({str(r.uri) for r in resources},

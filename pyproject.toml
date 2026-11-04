@@ -1,7 +1,7 @@
 [project]
 name = "cityflo-ai-engineer-assignment"
 version = "0.1.0"
-description = "MCP server for personal resume tools, resources, and prompts"
+description = "MCP tools and reproducible route lateness decisions over Cityflo ops data"
 readme = "README.md"
 authors = [
     { name = "KedarDamale", email = "damalekedar@gmail.com" }

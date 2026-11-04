@@ -1,6 +1,6 @@
 # Exploratory comparison
 
-Input: current CSV, 5,292 records; its parsed, whitespace-stripped records match the original Git blob in order, though byte hashes differ. 5,250 included, 24 unparseable and 18 with negative elapsed time excluded. Offset is interpreted as stamped; unverified clock misconfiguration remains possible. REC-114 membership is unresolved because vehicle series contains only two digits. All numbers are provisional.
+Input: current CSV, 5,292 records; its SHA-256 matches the original value in `sources.json` (verified 2026-11-04). 5,250 included, 24 unparseable and 18 with negative elapsed time excluded. Offset is interpreted as stamped; unverified clock misconfiguration remains possible. REC-114 membership is unresolved because vehicle series contains only two digits. All numbers are provisional.
 
 | Route | n | Median | 10% trimmed | Huber c=1.5 | Mean | >10 min | >30 min |
 |---|---:|---:|---:|---:|---:|---:|---:|

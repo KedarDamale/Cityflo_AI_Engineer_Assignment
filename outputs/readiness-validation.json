@@ -1,0 +1,58 @@
+{
+  "verified_at": "2026-11-04T12:11:40.644527+00:00",
+  "ready_for_submission": true,
+  "operational_policy": "Export runtime for unidentified classes; candidate acceptance anchored in ledger; no mapping inferred",
+  "input_hashes": [
+    {
+      "path": "BRIEF.md",
+      "matches_original_sha256": true
+    },
+    {
+      "path": "DATA_GUIDE.md",
+      "matches_original_sha256": true
+    },
+    {
+      "path": "HANDOFF.md",
+      "matches_original_sha256": true
+    },
+    {
+      "path": "data/ops_log.txt",
+      "matches_original_sha256": true
+    },
+    {
+      "path": "data/schedule_v2.csv",
+      "matches_original_sha256": true
+    },
+    {
+      "path": "data/trips.csv",
+      "matches_original_sha256": true
+    }
+  ],
+  "ledger_entries_verified": 19,
+  "native_session_count": 5,
+  "clean_environment": {
+    "python": "3.12.14",
+    "packages_installed": 78,
+    "locked_offline_setup_passed": true
+  },
+  "full_suite": {
+    "tests": 12,
+    "passed": true,
+    "environment": "fresh install, local socket/subprocess permissions"
+  },
+  "route_mcp_validation": "outputs/route-mcp-validation.json",
+  "fresh_slice_validation": "outputs/fresh-slice-validation.json",
+  "decision_rows_verified": 40,
+  "ranking": [
+    "R-35",
+    "R-14",
+    "R-33"
+  ],
+  "material_limitations": [
+    "No verified 4xx mapping; timetable eligibility can clear R-14",
+    "R-35/R-14 order is sensitive to one severe-trip correction",
+    "R-26 clear is sensitive to extreme excluded-record assumptions",
+    "Historical transcript privacy audit is limited, not an exhaustive semantic guarantee"
+  ],
+  "submission_receipt": "Retained locally only after actual Cityflo response"
+}
